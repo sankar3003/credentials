@@ -1,0 +1,83 @@
+angular validators
+
+
+
+
+
+
+
+custom validators
+
+////////
+
+core.js:5828 ERROR TypeError: Cannot read property 'controls' of null
+2.
+
+core.js:5828 ERROR TypeError: Cannot read property '_syncPendingControls' of null
+
+.............
+(focus)="myMethod()"
+(blur)="myMethod()" 
+(submit)="myMethod()"  
+(scroll)="myMethod()"
+
+(cut)="myMethod()"
+(copy)="myMethod()"
+(paste)="myMethod()"
+
+(keydown)="myMethod()"
+(keypress)="myMethod()"
+(keyup)="myMethod()"
+
+(mouseenter)="myMethod()"
+(mousedown)="myMethod()"
+(mouseup)="myMethod()"
+
+(click)="myMethod()"
+(dblclick)="myMethod()"
+
+(drag)="myMethod()"
+(dragover)="myMethod()"
+(drop)="myMethod()"
+
+
+==============
+Object.keys  => is used to convert object into formArray
+
+[[[[[[[[[[
+
+
+
+133
+
+JIT - Compile TypeScript just in time for executing it.
+
+Compiled in the browser.
+Each file compiled separately.
+No need to build after changing your code and before reloading the browser page.
+Suitable for local development.
+AOT - Compile TypeScript during build phase.
+
+Compiled by the machine itself, via the command line (Faster).
+All code compiled together, inlining HTML/CSS in the scripts.
+No need to deploy the compiler (Half of Angular size).
+More secure, original source not disclosed.
+Suitable for production builds.
+
+///////////
+
+
+Run angular projects on local
+First verify your machine IP Address.
+
+On Windows, type ipconfig in Prompt (copy IPv4).
+On Mac, type ifconfig |grep inet in Terminal (copy inet).
+
+In my case this is 192.168.0.10.
+
+Next, type ng serve --host 192.168.0.10.
+
+Ok, your app on air for all devices on same network.
+
+Now only http://192.168.0.10:4200/ will work, localhost not more.
+

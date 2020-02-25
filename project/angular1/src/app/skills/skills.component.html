@@ -1,0 +1,41 @@
+<h1>How to Create Custom Validators in Angular 8 - ItSolutionStuff.com</h1>
+<!-- <i nz-icon [nzType]="'star'" [nzTheme]="'fill'"></i>
+<i nz-icon [nzType]="'message'" style="font-size: 16px; color: #08c;"></i> -->
+<form [formGroup]="form" (ngSubmit)="submit()">
+   
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input 
+            formControlName="username"
+            id="username" 
+            type="text" 
+            class="form-control">
+         <!-- {{form.get('username').dirty | json}}  {{form.get('username').touched | json}}
+{{form.get('username').errors?.required | json}} -->
+
+{{form.get('username').status | json }}
+
+
+{{form.get("username").errors| json}}
+
+        <div *ngIf="f.username.touched && f.username.invalid" class="alert alert-danger">
+            <div *ngIf="f.username.errors.required">Username is required.</div>
+            <div *ngIf="f.username.errors.minlength">Username should be 3 character.</div>
+            <div *ngIf="f.username.errors.cannotContainSpace">Username can not contain space.</div>
+        </div>
+    </div>
+     
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input 
+            formControlName="password"
+            id="password" 
+            type="password" 
+            class="form-control">
+        <div *ngIf="f.password.touched && f.password.invalid" class="alert alert-danger">
+            <div *ngIf="f.password.errors.required">Password is required.</div>
+        </div>
+    </div>
+    
+    <button class="btn btn-primary" type="submit">Submit</button>
+</form>
