@@ -24,7 +24,7 @@
     "@rxweb/reactive-dynamic-forms": "0.0.3",
     "@rxweb/reactive-form-validators": "^1.9.9-beta1",
     "bootstrap": "^4.4.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "ng-zorro-antd": "^8.5.2",
     "popper.js": "^1.16.1",
     "primeicons": "^2.0.0",
